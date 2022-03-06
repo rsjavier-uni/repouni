@@ -539,5 +539,29 @@ var Script = function () {
                 }
             }
         });  
+
+        // Programa validation
+        $('#programaForm').each(function () {
+            $(this).validate({
+                rules: {
+                    anho_acreditacion: {
+                        required: true,
+                        number: true
+                    },
+                    titulo: {
+                       required: true
+                    }
+                },
+                messages: {
+                    anho_acreditacion: {
+                        required: "El campo no puede estar vacio",
+                        number: "El campo debe ser numérico"
+                    },
+                    titulo: {
+                         required: "El campo no puede estar vacio"
+                    }
+                }
+            });
+           });
     });
 }();
