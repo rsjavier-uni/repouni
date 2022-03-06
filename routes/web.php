@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::group(['middleware' => ['web']], function() {
    Route::get('/login','Login\LoginController@login');
    Route::post('/auth/login', ['as' => 'auth.login', 'uses' => 'Login\LoginController@postLogin']);
@@ -96,7 +98,16 @@ Route::group(['middleware' => ['web']], function() {
      Route::get('logs_audits', ['as' => 'logs.audits', 'uses' => 'LogAudit\LogAuditController@view']);
 	 Route::get('logs_audits/search', ['as' => 'logs_audits.search', 'uses' => 'LogAudit\LogAuditController@search']);
 	 Route::delete('logs_audits/destroyAll', ['as' => 'logs_audits.destroyAll', 'uses' => 'LogAudit\LogAuditController@destroyAll']);
-});
+   /*programa route*/
+   Route::get('programa/new',['as' => 'programa.new','uses'=>'Programa\ProgramaController@nuevo']);
+   Route::post('programa/create', ['as' => 'programa.create', 'uses' => 'Programa\ProgramaController@create']);
+   Route::get('programa/{id}/edit', ['as' => 'programa.edit', 'uses' => 'Programa\ProgramaController@edit']);
+   Route::get('programa/index', ['as' => 'programa.index', 'uses' => 'Programa\ProgramaController@index']);
+   Route::put('programa/{id}', ['as' => 'programa.update', 'uses' => 'Programa\ProgramaController@update']);
+   Route::get('programa/{id}/show', ['as' => 'programa.show', 'uses' => 'Programa\ProgramaController@show']);
+   Route::delete('programa/{id}/destroy', ['as' => 'programa.destroy', 'uses' => 'Programa\ProgramaController@destroy']);
+   Route::get('programa/search', ['as' => 'programa.search', 'uses' => 'Programa\ProgramaController@search']);
+  });
    Route::get('/',['as' => 'sites','uses'=>'Sites\SitesController@sites']);
    Route::get('sites',['as' => 'sites','uses'=>'Sites\SitesController@sites']);
    Route::post('sites/login', ['as' => 'sites.login', 'uses' => 'Sites\Login\LoginController@postLogin']);
