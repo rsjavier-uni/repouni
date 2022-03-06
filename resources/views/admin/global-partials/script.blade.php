@@ -1,0 +1,20 @@
+{!! Html::script('assets/js/jquery/jquery.js') !!}
+{!! Html::script('assets/js/jquery/jquery-ui-1.10.4.min.js') !!}
+{!! Html::script('assets/js/jquery/jquery-1.8.3.min.js') !!}
+{!! Html::script('assets/js/bootstrap/bootstrap.min.js') !!}
+{!! Html::script('assets/js/jquery/jquery.slimscroll.min.js') !!}
+{!! Html::script('assets/js/jquery/jquery.validate.min.js') !!}
+{!! Html::script('assets/js/controller/IndiceController.js') !!}
+{!! Html::script('assets/js/controller/CitaController.js') !!}
+{!! Html::script('assets/js/controller/CarreraController.js') !!}
+{!! Html::script('assets/js/form/form-validation-script.js') !!}
+{!! Html::script('assets/js/other/additional-methods.js') !!}
+{!! Html::script('assets/js/jquery/jquery.scrollTo.min.js') !!}
+{!! Html::script('assets/js/jquery/jquery.nicescroll.js') !!}
+{!! Html::script('assets/js/bootstrap/bootstrap-datepicker.js') !!}
+{!! Html::script('assets/js/bootstrap/bootstrap-filestyle.min.js') !!}
+{!! Html::script('assets/js/other/scripts.js') !!}
+{!! Html::script('assets/js/other/popup-alert-delete.js') !!}
+{!! Html::script('assets/js/other/select2.min.js') !!}
+{!! Html::script('assets/js/bootstrap/boostrap-accordion.js') !!}
+@yield('script')

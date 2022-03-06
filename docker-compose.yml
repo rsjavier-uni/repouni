@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - data:/var/lib/mysql
+    restart: always
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3306:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: repo_db
+      MYSQL_USER: repo_user
+      MYSQL_PASSWORD: repo_password
+
+volumes:
+  data: {}

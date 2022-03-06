@@ -1,0 +1,13 @@
+[01-Apr-2017 20:37:19 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/surconsult/public_html/repo-uni/routes/web.php on line 38
+[01-Apr-2017 21:03:25 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/surconsult/public_html/repo-uni/routes/web.php on line 47
+[07-Apr-2017 19:39:16 UTC] PHP Fatal error:  Call to undefined method Illuminate\Foundation\Application::withFacades() in /home/surconsult/public_html/repo-uni/bootstrap/app.php on line 47
+[19-Apr-2017 19:07:17 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/surconsult/public_html/repo-uni/config/auth.php on line 16
+[19-Apr-2017 19:07:48 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/surconsult/public_html/repo-uni/config/auth.php on line 16
+[19-Apr-2017 19:08:21 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/surconsult/public_html/repo-uni/config/old-auth.php on line 16
+[19-Apr-2017 19:08:56 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/surconsult/public_html/repo-uni/config/old-auth.php on line 16
+[19-Apr-2017 19:12:34 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/surconsult/public_html/repo-uni/config/old-auth.php on line 16
+[19-Apr-2017 19:15:36 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/surconsult/public_html/repo-uni/config/old-auth.php on line 16
+[19-Apr-2017 20:31:56 UTC] PHP Fatal error:  Class 'CreateUsersRegisterTable' not found in /home/surconsult/public_html/repo-uni/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 411
+[19-Apr-2017 20:32:47 UTC] PHP Fatal error:  Class 'CreateUsersRegisterTable' not found in /home/surconsult/public_html/repo-uni/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 411
+[19-Apr-2017 20:33:19 UTC] PHP Fatal error:  Class 'CreateUsersRegisterTable' not found in /home/surconsult/public_html/repo-uni/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 411
+[03-May-2017 18:53:26 UTC] PHP Fatal error:  Class 'Chencha\Share\ShareServiceProvider' not found in /home/surconsult/public_html/repo-uni/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 208

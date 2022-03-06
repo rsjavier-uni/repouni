@@ -1,0 +1,134 @@
+.infolist
+{
+    text-align: center;
+	font-family: 'Merriweather', serif;
+	font-size:2em; 
+	color: #fff;
+	line-height:200%;
+	border-radius:5px; 
+}
+.labelname
+{
+	font-family: 'Merriweather', serif;
+	font-size:1.1em; 
+}
+
+.listnow .btn-primary
+{
+	background-color:#ff5b5b;
+	font-family: 'Merriweather', serif;
+	font-size:1.5em; 
+}
+.listnow .btn-primary
+{
+	border-color:#ff5b5b; 
+}
+
+.listnow .btn-primary:active, .listnow .btn-primary:focus
+{
+	outline: none;
+}
+
+.tabsbar
+{
+	
+	margin-top:20px;
+	border-radius-top:3px;
+		
+}
+
+.tabsbar li a
+{
+	
+	font-family: 'Merriweather', serif;
+	font-size:1.1em;
+	color:#313b4b;
+
+
+	
+}
+
+.tabsbar li #pets:hover
+{
+	background-color:#1aa3a3;
+	color:white;
+}
+
+.tabsbar li #vets:hover
+{
+	background-color:#005b96;
+	color:white;
+}
+
+
+.tabsbar li #shops:hover
+{
+	background-color:#00C060;
+	color:white;
+}
+
+.tabsbar li #trainer:hover
+{
+	background-color:#930072;
+	color:white;
+}
+
+
+#pets1
+{
+	background-color:#1aa3a3;
+	border:1px solid #1aa3a3;
+}
+#vets2
+{
+	border:1px solid #005b96;;
+	background-color:#005b96;
+	
+}
+#shops3
+{
+	border:1px solid #00C060;;
+	background-color:#00C060;
+	
+}
+
+#trainer4
+{
+	border:1px solid #930072;
+	background-color:#930072;
+	
+}
+
+
+.nav-tabs {
+border-bottom: 1px solid #313b4b;
+}
+
+
+.nav-tabs>li.active>#pets, .nav-tabs>li.active>#pets:hover, .nav-tabs>li.active>#pets:focus 
+{
+background-color:#1aa3a3;
+	color:white;
+}
+
+.nav-tabs>li.active>#vets, .nav-tabs>li.active>#vets:hover, .nav-tabs>li.active>#vets:focus 
+{
+	background-color:#005b96;
+	color:white;
+}	
+
+.nav-tabs>li.active>#shops, .nav-tabs>li.active>#shops:hover, .nav-tabs>li.active>#shops:focus 
+{
+	background-color:#00C060;
+	color:white;
+}	
+
+.nav-tabs>li.active>#trainer, .nav-tabs>li.active>#trainer:hover, .nav-tabs>li.active>#trainer:focus 
+{
+	background-color:#930072;
+	color:white;
+}		
+
+@media(max-width: 420px){
+	.infolist{font-size: 1.5em;}
+} 
