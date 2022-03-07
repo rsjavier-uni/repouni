@@ -134,4 +134,8 @@ Route::group(['middleware' => ['web']], function() {
      Route::get('sites/user/edit', ['as' => 'webSiteUser.edit', 'uses' => 'Sites\User\UserController@edit']);
      Route::put('sites/user/update', ['as' => 'webSiteUser.update', 'uses' => 'Sites\User\UserController@update']);
      Route::get('sites/document/{id}/view', ['as' => 'sites.doc_view', 'uses' => 'Sites\LibroInvestigacion\LibroInvestigacionController@document_view']);
-  });
+     Route::get('sites/datos-abiertos', ['as' => 'sites.datos-abiertos', 'uses' => 'Sites\DatosAbiertos\DatosAbiertosController@index']);
+     Route::get('sites/datos-abiertos/{id}/view', ['as' => 'sites.datos-abiertos.view', 'uses' => 'Sites\DatosAbiertos\DatosAbiertosController@view']);
+     Route::get('sites/datos-abiertos/document/{id}/view', ['as' => 'sites.datos-abiertos.doc_view', 'uses' => 'Sites\DatosAbiertos\DatosAbiertosController@document_view']);
+     Route::get('sites/datos-abiertos/advanced-search',['as'=>'sites.datos-abiertos.advanced-search','uses'=>'Sites\DatosAbiertos\DatosAbiertosController@advancedSearch']);
+});
