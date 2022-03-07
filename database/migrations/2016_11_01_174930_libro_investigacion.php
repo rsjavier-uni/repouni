@@ -17,8 +17,8 @@ class LibroInvestigacion extends Migration
             $table->string('cod_doi',60);
             $table->string('titulo',300);
             $table->integer('area_id')->unsigned();
-            $table->foreign('area_id')->references('id')->on('area');
-            $table->integer('año',4);
+            // $table->foreign('area_id')->references('id')->on('area');
+            $table->integer('año')->length(10);
             $table->string('descripcion',5000);
             $table->string('portada_name',500);
             $table->string('document_name',500);

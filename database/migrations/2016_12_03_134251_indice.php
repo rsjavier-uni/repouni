@@ -15,7 +15,7 @@ class Indice extends Migration{
             $table->string('indice',100);
             $table->integer('libro_inv_id')->unsigned();
             $table->foreign('libro_inv_id')->references('id')->on('libro_investigacion');
-            $table->integer('pagina',3);
+            $table->integer('pagina')->length(3);
             $table->timestamps();
         });
     }
