@@ -107,6 +107,15 @@ Route::group(['middleware' => ['web']], function() {
    Route::get('programa/{id}/show', ['as' => 'programa.show', 'uses' => 'Programa\ProgramaController@show']);
    Route::delete('programa/{id}/destroy', ['as' => 'programa.destroy', 'uses' => 'Programa\ProgramaController@destroy']);
    Route::get('programa/search', ['as' => 'programa.search', 'uses' => 'Programa\ProgramaController@search']);
+    /*datos abiertos route*/
+    Route::get('datos-abiertos/new',['as' => 'datos-abiertos.new','uses'=>'DatosAbiertos\DatosAbiertosController@nuevo']);
+    Route::post('datos-abiertos/create', ['as' => 'datos-abiertos.create', 'uses' => 'DatosAbiertos\DatosAbiertosController@create']);
+    Route::get('datos-abiertos/{id}/edit', ['as' => 'datos-abiertos.edit', 'uses' => 'DatosAbiertos\DatosAbiertosController@edit']);
+    Route::get('datos-abiertos/index', ['as' => 'datos-abiertos.index', 'uses' => 'DatosAbiertos\DatosAbiertosController@index']);
+    Route::put('datos-abiertos/{id}', ['as' => 'datos-abiertos.update', 'uses' => 'DatosAbiertos\DatosAbiertosController@update']);
+    Route::get('datos-abiertos/{id}/show', ['as' => 'datos-abiertos.show', 'uses' => 'DatosAbiertos\DatosAbiertosController@show']);
+    Route::delete('datos-abiertos/{id}/destroy', ['as' => 'datos-abiertos.destroy', 'uses' => 'DatosAbiertos\DatosAbiertosController@destroy']);
+    Route::get('datos-abiertos/search', ['as' => 'datos-abiertos.search', 'uses' => 'DatosAbiertos\DatosAbiertosController@search']);
   });
    Route::get('/',['as' => 'sites','uses'=>'Sites\SitesController@sites']);
    Route::get('sites',['as' => 'sites','uses'=>'Sites\SitesController@sites']);

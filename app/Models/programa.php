@@ -10,7 +10,8 @@ Class Programa extends Model implements AuditableContract{
     protected $table='programa_acreditados';
     protected $fillable = ['anho_acreditacion', 'titulo', 'descripcion'];
     protected $auditExclude = ['id'];
-    /*public function investigaciones(){
-            return $this->hasMany('App\Models\libroinvestigacion','id');
-    } */
+    
+    public function datosAbiertos(){
+            return $this->hasMany('App\Models\datoabierto', 'id');
+    }
 }

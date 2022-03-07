@@ -9,8 +9,13 @@ Class Area extends Model implements AuditableContract{
    protected $table='area';
    protected $fillable = ['area'];
    protected $auditExclude = ['id'];
+
    public function investigaciones(){
         return $this->hasMany('App\Models\libroinvestigacion','id');
-   } 
+   }
+
+   public function datosAbiertos(){
+      return $this->hasMany('App\Models\datoabierto', 'id');
+   }
 }
 

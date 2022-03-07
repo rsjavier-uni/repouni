@@ -50,7 +50,18 @@
                <li>{!! link_to_route('programa.new','Nuevo Programa',array(),array('class'=>$current_usuario->can('programa.new')?'enabled':'disabled')) !!}</li>
                <li>{!! link_to_route('programa.index','Programas',array(),array('class'=>$current_usuario->can('programa.index')?'enabled':'disabled')) !!}</li>
             </ul>
-         </li>         
+         </li>
+         <li class="sub-menu">
+            <a href="javascript:;" class="">
+              <i class="glyphicon glyphicon-book"></i>
+                <span>Datos Abiertos</span>
+                <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            <ul class="sub">
+               <li>{!! link_to_route('datos-abiertos.new','Nueva Investigación',array(),array('class'=>$current_usuario->can('datos-abiertos.new')?'enabled':'disabled')) !!}</li>
+               <li>{!! link_to_route('datos-abiertos.index','Investigaciones',array(),array('class'=>$current_usuario->can('datos-abiertos.index')?'enabled':'disabled')) !!}</li>
+            </ul>
+         </li>             
          <li class="sub-menu">
 	       <a href="javascript:;" class="">
 	         <i class="icon_profile"></i>

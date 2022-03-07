@@ -127,3 +127,30 @@ function openPopupDeleteRole(id){
 
 }
 
+function openPopupDeleteInvestigacion(id){
+
+	var BASE="http://"+location.host+"/repo-uni/public/";
+
+	  $.ajax({
+
+	   url: BASE + "datos-abiertos/"+id+"/show",
+
+	   type:'GET',
+
+	   dataType:'JSON',
+
+	   success: function(textResponse){
+
+			 $('#titulo').html(textResponse['titulo']);
+
+			 $("#form-delete").attr("action", BASE+"datos-abiertos/"+id+"/destroy");
+
+		   
+
+	  }
+
+});
+
+}
+
+

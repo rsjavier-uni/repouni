@@ -563,5 +563,86 @@ var Script = function () {
                 }
             });
            });
+           $('#investigacionDAForm').each(function () {
+            $(this).validate({
+                rules: {
+                    anho: {
+                        required: true,
+                        number: true
+                    },
+                    titulo: {
+                       required: true
+                    },
+                    autor:{
+                        required: true
+                    },
+                    area_id: {
+                       required: true
+                    },
+                    programa_id: {
+                        required: true
+                     },
+                    descripcion: {
+                       required: true
+                    },
+                    portada:{
+                        required: 
+                                {depends: function(element) {
+                                   return $('#txt_investigacion_id').val() == '';
+                                }
+                        },
+                        accept: "image/jpeg, image/png"
+                    },
+                     archivo:{
+                        required: 
+                                {depends: function(element) {
+                                   return $('#txt_investigacion_id').val() == '';
+                                }
+                        },
+                        accept:"pdf"
+                    },
+                     idioma:{
+                        required: true
+                    },
+                },
+                messages: {                
+                    anho: {
+                        required: "El campo no puede estar vacio",
+                        number: "El campo debe ser numérico"
+                    },
+                    titulo: {
+                         required: "El campo no puede estar vacio"
+                    },
+                    autor: {
+                         required: "El campo no puede estar vacio"
+                    },
+                    area_id: {
+                         required: "El campo no puede estar vacio",
+                         regex: "El Formato de numero de tel?fono no es correcto"
+                    },
+                    programa_id: {
+                        required: "El campo no puede estar vacio",
+                        regex: "El Formato de numero de tel?fono no es correcto"
+                    },
+                    portada: {
+                         required: "El campo no puede estar vacio",
+                         accept:"Formato de imagen incorrecto"
+                    },
+                    descripcion: {
+                         required: "El campo no puede estar vacio"
+                    },
+                    archivo: {
+                         required: "El campo no puede estar vacio",
+                         accept:"El archivo tiene que ser un pdf"
+                    },
+                    idioma: {
+                         required: "El campo no puede estar vacio"
+                    },
+                    categoria: {
+                         required: "El campo no puede estar vacio"
+                    }
+                }
+            });
+           });
     });
 }();
