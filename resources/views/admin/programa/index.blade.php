@@ -1,12 +1,13 @@
 @include('admin.global-partials.header')
 @include('admin.global-partials.header-top')
 @include('admin.global-partials.menu')
+
 <section id="main-content">
     <section class="wrapper">
-       @can('programa.index')
+        @can('programa.index')
             <div class="row">
                 <div class="col-lg-7">
-                    <h3 class="page-header"><i class="fa fa-files-o"></i>Lista de Programas Acreditados</h3>
+                    <h3 class="page-header"><i class="fa fa-files-o"></i>Lista de Programas Acreditados por la ANEAES</h3>
                     <ol class="breadcrumb">
                     <li><i class="fa fa-home"></i>{!!link_to('admin','Home') !!}</li>
                     <li><i class="icon_document_alt"></i>Lista de Programas Acreditados</li>
@@ -27,7 +28,11 @@
                         @include('admin.programa.partials.table')
                     </section>
                     Hay {{$programas->total()}} registros
-                    
+                    <div class="pull-right">
+                        <div class="dataTables_paginate paging_bootstrap">
+                            {!!$programas->render()!!}
+                        </div>
+	                </div>
                 </div> 
             </div>
         @else

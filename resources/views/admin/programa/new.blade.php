@@ -7,10 +7,10 @@
 	    @can('programa.new')
 		    <div class="row">
 		        <div class="col-lg-7">
-		            <h3 class="page-header"><i class="fa fa-files-o"></i>Programa Acreditado</h3>
+		            <h3 class="page-header"><i class="fa fa-files-o"></i>Programa Acreditado por la ANEAES</h3>
 		            <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i>{!!link_to('admin','Home') !!}</li>
-                        <li><i class="icon_document_alt"></i>Programa Acreditado</li>
+                        <li><i class="icon_document_alt"></i>Nuevo Programa Acreditado</li>
 		            </ol>
 		        </div>
 		    </div>
@@ -29,6 +29,3 @@
         @endcan
     </section>
 </section>
-  
-               
-
